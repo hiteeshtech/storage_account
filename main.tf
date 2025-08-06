@@ -14,12 +14,12 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rsg" {
   name     = "punitrg"
-  location = "East US"
+  location = "West US"
 }
 
 resource "azurerm_storage_account" "stpg" {
   name                     = "haramistorage"
-  location                 = "East US"
+  location                 = "West US"
   resource_group_name      = "punitrg"
   account_tier             = "Standard"
   account_replication_type = "LRS"
