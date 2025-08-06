@@ -13,14 +13,14 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "hiteshrg"
+  name     = "punitrg"
   location = "East US"
 }
 
 resource "azurerm_storage_account" "stg" {
   name                     = "haramistorage"
   location                 = "East US"
-  resource_group_name      = "hiteshrg"
+  resource_group_name      = "punitrg"
   account_tier             = "Standard"
   account_replication_type = "LRS"
 }
