@@ -18,7 +18,7 @@ resource "azurerm_resource_group" "rg" {
 }
 
 resource "azurerm_storage_account" "stg" {
-  name                     = "hiteshstorageacc"
+  name                     = "haramistorage"
   location                 = "East US"
   resource_group_name      = "hiteshrg"
   account_tier             = "Standard"
